@@ -8,6 +8,7 @@ Release:	1.%{snap}.1
 License:	BSD-like
 Group:		Libraries
 Source0:	ftp://ftp.franken.de/pub/crypt/chipcards/scez/%{name}-%{snap}.tar.gz
+# Source0-md5:	8689a8e2148ab58c8a9e0b64fcca1f08
 Patch0:		%{name}-amfix.patch
 URL:		http://www.franken.de/crypt/scez.html
 BuildRequires:	autoconf
