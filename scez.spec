@@ -1,4 +1,5 @@
 Summary:	Smart Card Library
+Summary(pl):	Biblioteka do obs³ugi kart procesorowych
 Name:		scez
 Version:	1.0
 %define	snap	20020621
