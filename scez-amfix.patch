@@ -1,0 +1,51 @@
+--- scez-20020621/configure.in.orig	Fri Jun 21 17:12:41 2002
++++ scez-20020621/configure.in	Tue Mar 18 16:32:44 2003
+@@ -114,7 +114,6 @@
+ dnl jibapi
+ JIBAPILIB=
+ JIBAPIINC=
+-BLUEDOTSRC=
+ AC_ARG_ENABLE(jibapi, [\
+   --enable-jibapi=DIR     Enable JiB-API and specify location of library and\
+                               header files.],
+@@ -124,7 +123,6 @@
+     use_jibapi=true
+ 	JIBAPILIB=${enableval}/jibapi.a
+ 	JIBAPIINC=-I${enableval}
+-	BLUEDOTSRC=scbluedot.c
+     ;;
+  esac
+ ], [
+@@ -133,7 +131,7 @@
+ ])
+ AC_SUBST(JIBAPILIB)
+ AC_SUBST(JIBAPIINC)
+-AC_SUBST(BLUEDOTSRC)
++AM_CONDITIONAL(USE_JIBAPI, [test "$use_libapi" = true])
+ 
+ AC_OUTPUT(Makefile scez/Makefile sio/Makefile test/Makefile apps/Makefile doc/Makefile)
+ 
+--- scez-20020621/scez/Makefile.am.orig	Fri Jun 21 17:12:41 2002
++++ scez-20020621/scez/Makefile.am	Tue Mar 18 16:32:43 2003
+@@ -5,6 +5,12 @@
+ 
+ lib_LTLIBRARIES = libscez.la
+ 
++if USE_JIBAPI
++BLUEDOTSRC = scbluedot.c
++else
++BLUEDOTSRC =
++endif
++
+ libscez_la_SOURCES = \
+ 	scacr20.c \
+ 	scbasiccard.c \
+@@ -37,7 +43,7 @@
+ 	sct1.c \
+ 	sctcos.c \
+ 	sctowitoko.c \
+-	@BLUEDOTSRC@
++	$(BLUEDOTSRC)
+ 
+ libscez_la_LIBADD = $(needed_libs) #@LTLIBOBJS@
+ 
