@@ -21,52 +21,52 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 SCEZ is a library to make portable smart card development easier.
 
 Supported readers:
- - ACS ACR20S/Cybermouse (as far as this broken reader can be
-   supported)
- - Dumb Mouse
- - Gemplus GCR410
- - Intertex IX2
- - Schlumberger Reflex62/64
- - Towitoko Chipdrive
- - and any reader supporting CT-API
+- ACS ACR20S/Cybermouse (as far as this broken reader can be
+  supported)
+- Dumb Mouse
+- Gemplus GCR410
+- Intertex IX2
+- Schlumberger Reflex62/64
+- Towitoko Chipdrive
+- and any reader supporting CT-API
 
 Supported cards:
- - ComCard MFC (mostly untested)
- - GeldKarte
- - Gemplus GPK4000 and GPK8000
- - Giesecke & Devrient Smr@rtCafe
- - GSM SIM card
- - Proton
- - Quick
- - Schlumberger Cryptoflex, Cyberflex and Multiflex
- - Telesec TCOS2
- - ZeitControl BasicCard
+- ComCard MFC (mostly untested)
+- GeldKarte
+- Gemplus GPK4000 and GPK8000
+- Giesecke & Devrient Smr@rtCafe
+- GSM SIM card
+- Proton
+- Quick
+- Schlumberger Cryptoflex, Cyberflex and Multiflex
+- Telesec TCOS2
+- ZeitControl BasicCard
 
 %description -l pl
 SCEZ to biblioteka u³atwiaj±ca tworzenie przeno¶nego oprogramowanie
 u¿ywaj±cego kart procesorowych.
 
 Obs³ugiwane czytniki:
- - ACS ACR20S/Cybermouse (na tyle, na ile da siê obs³u¿yæ te u³omne
-   czytniki)
- - Dumb Mouse
- - Gemplus GCR410
- - Intertex IX2
- - Schlumberger Reflex 62/64
- - Towitoki Chipdrive
- - oraz dowolny czytnik obs³uguj±cy CT-API
+- ACS ACR20S/Cybermouse (na tyle, na ile da siê obs³u¿yæ te u³omne
+  czytniki)
+- Dumb Mouse
+- Gemplus GCR410
+- Intertex IX2
+- Schlumberger Reflex 62/64
+- Towitoki Chipdrive
+- oraz dowolny czytnik obs³uguj±cy CT-API
 
 Obs³ugiwane karty:
- - ComCard MFC (w wiêkszo¶ci nie testowane)
- - GeldKarte
- - Gemplus GPK4000 i GPK8000
- - Giesecke & Devrient Smr@rtCafe
- - karty SIM GSM
- - Proton
- - Quick
- - Schlumberger Cryptoflex, Cyberflex i Multiflex
- - Telesec TSOS2
- - ZeitControl BasicCard
+- ComCard MFC (w wiêkszo¶ci nie testowane)
+- GeldKarte
+- Gemplus GPK4000 i GPK8000
+- Giesecke & Devrient Smr@rtCafe
+- karty SIM GSM
+- Proton
+- Quick
+- Schlumberger Cryptoflex, Cyberflex i Multiflex
+- Telesec TSOS2
+- ZeitControl BasicCard
 
 %package devel
 Summary:	SCEZ header files
