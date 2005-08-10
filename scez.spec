@@ -72,7 +72,7 @@ Obs³ugiwane karty:
 Summary:	SCEZ header files
 Summary(pl):	Pliki nag³ówkowe SCEZ
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 SCEZ header files.
@@ -84,7 +84,7 @@ Pliki nag³ówkowe SCEZ.
 Summary:	SCEZ static library
 Summary(pl):	Biblioteka statyczna SCEZ
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 SCEZ static library.
