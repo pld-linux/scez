@@ -94,7 +94,7 @@ Biblioteka statyczna SCEZ.
 
 %prep
 %setup -q -n %{name}-%{snap}
-%patch -p1
+%patch0 -p1
 
 %build
 %{__libtoolize}
