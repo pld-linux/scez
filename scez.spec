@@ -1,5 +1,5 @@
 Summary:	Smart Card Library
-Summary(pl.UTF-8):   Biblioteka do obsługi kart procesorowych
+Summary(pl.UTF-8):	Biblioteka do obsługi kart procesorowych
 Name:		scez
 Version:	1.0
 %define	snap	20020621
@@ -70,7 +70,7 @@ Obsługiwane karty:
 
 %package devel
 Summary:	SCEZ header files
-Summary(pl.UTF-8):   Pliki nagłówkowe SCEZ
+Summary(pl.UTF-8):	Pliki nagłówkowe SCEZ
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -82,7 +82,7 @@ Pliki nagłówkowe SCEZ.
 
 %package static
 Summary:	SCEZ static library
-Summary(pl.UTF-8):   Biblioteka statyczna SCEZ
+Summary(pl.UTF-8):	Biblioteka statyczna SCEZ
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
