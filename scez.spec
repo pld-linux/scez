@@ -1,5 +1,5 @@
 Summary:	Smart Card Library
-Summary(pl):	Biblioteka do obs≥ugi kart procesorowych
+Summary(pl.UTF-8):   Biblioteka do obs≈Çugi kart procesorowych
 Name:		scez
 Version:	1.0
 %define	snap	20020621
@@ -42,22 +42,22 @@ Supported cards:
 - Telesec TCOS2
 - ZeitControl BasicCard
 
-%description -l pl
-SCEZ to biblioteka u≥atwiaj±ca tworzenie przeno∂nego oprogramowanie
-uøywaj±cego kart procesorowych.
+%description -l pl.UTF-8
+SCEZ to biblioteka u≈ÇatwiajƒÖca tworzenie przeno≈õnego oprogramowanie
+u≈ºywajƒÖcego kart procesorowych.
 
-Obs≥ugiwane czytniki:
-- ACS ACR20S/Cybermouse (na tyle, na ile da siÍ obs≥uøyÊ te u≥omne
+Obs≈Çugiwane czytniki:
+- ACS ACR20S/Cybermouse (na tyle, na ile da siƒô obs≈Çu≈ºyƒá te u≈Çomne
   czytniki)
 - Dumb Mouse
 - Gemplus GCR410
 - Intertex IX2
 - Schlumberger Reflex 62/64
 - Towitoki Chipdrive
-- oraz dowolny czytnik obs≥uguj±cy CT-API
+- oraz dowolny czytnik obs≈ÇugujƒÖcy CT-API
 
-Obs≥ugiwane karty:
-- ComCard MFC (w wiÍkszo∂ci nie testowane)
+Obs≈Çugiwane karty:
+- ComCard MFC (w wiƒôkszo≈õci nie testowane)
 - GeldKarte
 - Gemplus GPK4000 i GPK8000
 - Giesecke & Devrient Smr@rtCafe
@@ -70,26 +70,26 @@ Obs≥ugiwane karty:
 
 %package devel
 Summary:	SCEZ header files
-Summary(pl):	Pliki nag≥Ûwkowe SCEZ
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe SCEZ
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 SCEZ header files.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe SCEZ.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe SCEZ.
 
 %package static
 Summary:	SCEZ static library
-Summary(pl):	Biblioteka statyczna SCEZ
+Summary(pl.UTF-8):   Biblioteka statyczna SCEZ
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 SCEZ static library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Biblioteka statyczna SCEZ.
 
 %prep
